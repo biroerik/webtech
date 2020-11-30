@@ -1,0 +1,74 @@
+body {
+    background-color:	#06A6E5;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.contentImage {
+    width: 200px;
+}
+
+#banner {
+    height: 160px;
+    background: white;
+    color: #B26334;
+    font-size: 140px;
+}
+
+#menuBar {
+    font-size: 17px;
+    float: right;
+    background: #B26334;
+    margin-top: 50px;
+}
+
+#menuBar .menuButton {
+    width: 150px;
+    background: #06A6E5;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: auto;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+#menuBar .menuButton:HOVER {
+    background: black;
+    border: 5px solid gray;
+    color: white;
+}
+
+.innerTable {
+    border: 1px double;
+    width: auto;
+}
+
+table {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 5px white solid;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px white solid;
+    height: 20px;
+    width: 40%;
+}
+
+.centeredTd {
+    text-align: center;
+}
+
+#booksTable {
+    width: 100%;
+    margin: auto;
+}
