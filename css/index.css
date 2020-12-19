@@ -61,14 +61,7 @@ table {
 td {
     border: 1px white solid;
     height: 20px;
-    width: 40%;
+    width: 10%;
 }
 
-.centeredTd {
-    text-align: center;
-}
 
-#booksTable {
-    width: 100%;
-    margin: auto;
-}
