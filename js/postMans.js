@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var myform = $("#manform");
+  var myform = $("#man");
   console.log(myform);
   myform.submit(function (e) {
     e.preventDefault();

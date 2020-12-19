@@ -23,7 +23,7 @@ $(document).ready(function () {
       $(table).append(row);
     });
   });
-  var myform = $("carform");
+  var myform = $("#car");
   console.log(myform);
   myform.submit(function (e) {
     e.preventDefault();
