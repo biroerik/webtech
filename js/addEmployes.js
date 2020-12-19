@@ -13,6 +13,7 @@ $(document).ready(function () {
       role: formData[2].value,
       age: formData[3].value,
       education: formData[4].value,
+      boss: formData[5].value,
     };
     console.log(requestData);
     $.ajax({

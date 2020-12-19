@@ -12,12 +12,15 @@ $(document).ready(function () {
         var roleCell = $("<td>" + value.role + "</td>");
         var ageCell = $("<td>" + value.age + "</td>");
         var educationCell = $("<td>" + value.education + "</td>");
+        var bossCell = $("<td>" + value.boss + "</td>");
+
         $(row).append(keyCell);
         $(row).append(nameCell);
         $(row).append(saleryCell);
         $(row).append(roleCell);
         $(row).append(ageCell);
         $(row).append(educationCell);
+        $(row).append(bossCell);
         $(table).append(row);
       });
     }
@@ -36,6 +39,7 @@ $(document).ready(function () {
       role: formData[3].value,
       age: formData[4].value,
       education: formData[5].value,
+      boss: formData[6].value,
     };
     console.log(requestData);
     $.ajax({
