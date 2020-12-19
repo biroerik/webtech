@@ -5,20 +5,20 @@ $(document).ready(function () {
     event.preventDefault();
     console.log(event);
     console.log(this);
-    var json = $(this).serializeArray();
-    console.log(json[0].value);
-    var postData = {
-      name: json[0].value,
-      salery: json[1].value,
-      role: json[2].value,
-      age: json[3].value,
-      education: json[4].value,
+    var formData = $(this).serializeArray();
+    console.log(formData[0].value);
+    var requestData = {
+      name: formData[0].value,
+      salery: formData[1].value,
+      role: formData[2].value,
+      age: formData[3].value,
+      education: formData[4].value,
     };
-    console.log(postData);
+    console.log(requestData);
     $.ajax({
       type: "POST",
       url: "https://dolgozok-8244d-default-rtdb.firebaseio.com/employe.json",
-      data: JSON.stringify(postData),
+      data: JSON.stringify(requestData),
       contentType: "application/json",
     })
       .done(console.log)

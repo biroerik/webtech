@@ -1,18 +1,18 @@
 $(document).ready(function () {
-  var myform2 = $("#EmpsForm");
-  myform2.submit(function (e) {
-    e.preventDefault();
-    var json = $(this).serializeArray();
-    console.log(json[0].value);
-    var obj = {
-      _id: json[0].value,
+  var empForm = $("#EmpsForm");
+  empForm.submit(function (event) {
+    event.preventDefault();
+    var formData = $(this).serializeArray();
+    console.log(formData[0].value);
+    var requestData = {
+      id: formData[0].value,
     };
-    console.log(obj);
+    console.log(requestData);
     $.ajax({
       type: "DELETE",
       url:
-        "https://dolgozok-8244d-default-rtdb.firebaseio.com/employe/" + json[0].value+".json",
-      data: JSON.stringify(obj),
+        "https://dolgozok-8244d-default-rtdb.firebaseio.com/employe/" + formData[0].value+ ".json",
+      data: JSON.stringify(requestData),
       contentType: "application/json",
     })
       .done(console.log)
